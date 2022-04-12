@@ -21,13 +21,13 @@
               <div class="row p-3">
                 <div class="col">
                   <i class="b-icon fa-solid fa-gear fa-xl" style="padding-right:10px"></i>
-                  <a href="" class="b-a"><span style="font-weight: 500;font-size: 20px;line-height: 20px;">My Account</span> </a>
+                  <a href="/myaccount" class="b-a"><span style="font-weight: 500;font-size: 20px;line-height: 20px;">My Account</span> </a>
                 </div>
               </div>
               <div class="row p-3">
                 <div class="col">
                   <i class="b-icon fa-solid fa-book-open fa-xl" style="padding-right:10px"></i>
-                  <a href=""class="b-a"><span style="font-weight: 500;font-size: 20px;line-height: 20px;">My Book</span> </a>
+                  <a href="/mybook"class="b-a"><span style="font-weight: 500;font-size: 20px;line-height: 20px;">My Book</span> </a>
                 </div>
               </div>
               <div class="row p-3">

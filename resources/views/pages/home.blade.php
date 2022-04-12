@@ -42,7 +42,7 @@
                 <div class="col-md-3 form-group">
                   <label for="">Rooms</label>
                   <div class="input-group">
-                    <input type="number" name="name" class="form-control-row-number" id="Room" placeholder="Your Name" required>
+                    <input type="number" name="number" class="form-control-row-number" id="Room" placeholder="Your Name" required>
                   </div>
                 </div>
                 <div class="col-md-3 form-group">
@@ -54,6 +54,7 @@
         </div>
   <!-- End Search Forms -->
 
+  
   {{-- Rekomendasi Hotel --}}
   <div class="container" style="padding-bottom: 15vh">
     <div class="container pt-5 mt-5 d-flex justify-content-start">
@@ -62,50 +63,81 @@
       </div>
     </div>
   <!-- Card Rekomendasi Hotel -->
-  <div class="container d-flex justify-content-start">  
-    <div class="row">
-      <div class="col-sm-3">
-        <a href="#" class="card">
-          <h6 class="card-city">Buah Batu</h6>
-            <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
-            
-            <div class="card-body">
-              <h5 class="card-title">Hotel Utap Bandung</h5>
-              <p class="card-text">Rp 200.000</p>
-          </div>  
-        </a>
+      {{-- > --}}
+    <section class="product"> 
+        <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <div class="container d-flex justify-content-start">  
+          <div class="product-container">
+            <div class="col-sm-3" id="rec-hotel">
+              <a href="#" class="card">
+                <h6 class="card-city">Buah Batu</h6>
+                  <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Utap Bandung</h5>
+                    <p class="card-text">Rp 200.000</p>
+                </div>  
+              </a>
+            </div>
+            <div class="col-sm-3" id="rec-hotel">
+              <a href="#" class="card">
+                <h6 class="card-city">Buah Batu</h6>
+                  <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Utap Bandung</h5>
+                    <p class="card-text">Rp 200.000</p>
+                </div>  
+              </a>
+            </div>
+            <div class="col-sm-3" id="rec-hotel">
+              <a href="#" class="card">
+                <h6 class="card-city">Buah Batu</h6>
+                  <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Utap Bandung</h5>
+                    <p class="card-text">Rp 200.000</p>
+                </div>  
+              </a>
+            </div>
+            <div class="col-sm-3" id="rec-hotel">
+              <a href="#" class="card">
+                <h6 class="card-city">Buah Batu</h6>
+                  <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Utap Bandung</h5>
+                    <p class="card-text">Rp 200.000</p>
+                </div>  
+              </a>
+            </div>
+            <div class="col-sm-3" id="rec-hotel">
+              <a href="#" class="card">
+                <h6 class="card-city">Buah Batu</h6>
+                  <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Utap Bandung</h5>
+                    <p class="card-text">Rp 200.000</p>
+                </div>  
+              </a>
+            </div>
+            <div class="col-sm-3" id="rec-hotel">
+              <a href="#" class="card">
+                <h6 class="card-city">Buah Batu</h6>
+                  <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Utap Bandung</h5>
+                    <p class="card-text">Rp 200.000</p>
+                </div>  
+              </a>
+            </div>
+          </div>
       </div>
-      <div class="col-sm-3">
-        <a href="#" class="card">
-          <h6 class="card-city">Buah Batu</h6>
-            <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Hotel Utap Bandung</h5>
-              <p class="card-text">Rp 200.000</p>
-          </div>  
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <a href="#" class="card">
-          <h6 class="card-city">Buah Batu</h6>
-            <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Hotel Utap Bandung</h5>
-              <p class="card-text">Rp 200.000</p>
-          </div>  
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <a href="#" class="card">
-            <img class="card-img-top" src="img/traveling.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Hotel Utap Bandung</h5>
-              <p class="card-text">Rp 200.000</p>
-          </div>  
-        </a>
-      </div>
-    </div>
-</div>
+    </section>
 </div>
   <!-- End Card Rekomendasi Hotel -->
 
@@ -129,5 +161,6 @@
     </section>
     <!-- End About Section -->
     @include('includes.footer')
+    <script src="js/script.js"></script>
   </body>
 @endsection
