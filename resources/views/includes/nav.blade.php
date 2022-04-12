@@ -7,9 +7,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto active" href="#about">About</a></li>
-          <li><a class="login" href="/login">Login</a></li>
+          
+          @guest
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto active" href="#about">About</a></li>
+              <li><a class="login" href="/login">Login</a></li>
+          @endguest
+          @auth
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto active" href="#about">About</a></li>
+            <li><a class="nav-link   active" href="/myaccount"><i class="fa-regular fa-circle-user fa-xs" style="padding-right: 5px"></i> {{auth()->user()->name}}</a></li>
+            
+          @endauth
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

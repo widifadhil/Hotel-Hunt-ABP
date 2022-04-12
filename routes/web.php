@@ -19,13 +19,14 @@ use GuzzleHttp\Middleware;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 //View Home
 Route::get('/home',[HomeController::class,'home'] );
 Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [UserSettingController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'register']);
 Route::post('/register', [RegisterController::class, 'store']);
 //End View Home
