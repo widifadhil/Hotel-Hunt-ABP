@@ -6,6 +6,10 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\UserSettingController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\RoomtypeController;
 use GuzzleHttp\Middleware;
 
 /*
@@ -24,6 +28,7 @@ use GuzzleHttp\Middleware;
 // });
 //View Home
 Route::get('/home',[HomeController::class,'home'] );
+Route::get('/home', [HomeController::class, 'home']);
 Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [UserSettingController::class, 'logout']);
@@ -44,5 +49,30 @@ Route::get('/pclist', [UserSettingController::class, 'pclist']);
 //End View User Setting
 
 
+
+
+//  halaman admin (dashboard)
+Route::get('/admin', function () {
+    return view('dashboard');
+});
+
+//admin login route
+Route::get('admin/login', [AdminController::class, 'login']);
+Route::post('admin/login', [AdminController::class, 'check_login']);
+Route::get('admin/logout', [AdminController::class, 'login']);
+
+
+//  roomType route
+Route::get('admin/roomtype/{id}/delete', [RoomtypeController::class, 'destroy']);
+Route::resource('admin/roomtype', RoomtypeController::class);
+
+//  room route
+Route::get('admin/room/{id}/delete', [RoomController::class, 'destroy']);
+Route::resource('admin/room', RoomController::class);
+
+
+//  customer route
+Route::get('admin/customer/{id}/delete', [CustomerController::class, 'destroy']);
+Route::resource('admin/customer', CustomerController::class);
 
 
