@@ -1,5 +1,5 @@
 
-@extends('layouts.layout')
+@extends('layouts-admin.layout-admin')
 @section('content')
     <!-- Begin Page Content -->
     <div class="container-fluid">

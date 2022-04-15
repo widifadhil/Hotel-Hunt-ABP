@@ -16,7 +16,7 @@ class LoginController extends Controller
     public function authenticate(Request $request)
     {
         $credentials= $request->validate([
-            'email' => 'required|email:dns',
+            'username' => 'required',
             'password' => 'required'
         ]);
         if (Auth::attempt($credentials)) {
@@ -25,8 +25,8 @@ class LoginController extends Controller
             return redirect()->intended('/home');
         }
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+            'username' => 'The provided credentials do not match our records.',
+        ])->onlyInput('username');
     }
 
 }
