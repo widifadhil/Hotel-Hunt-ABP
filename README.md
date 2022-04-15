@@ -1,4 +1,4 @@
-<a hreft="https://www.instagram.com/padilfm/"> <img src="![](public/img/logo_biru.png)"></a>
+<a hreft="https://www.instagram.com/padilfm/"> <img src="public/img/logo_biru.png"></a>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
