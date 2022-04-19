@@ -1,3 +1,18 @@
+<?php
+
+if (!isset($_GET['id']) || !isset($_GET['idroom'])) {
+    header('Location: find');
+    exit();
+}
+
+$id = $_GET['id'];
+$idroomtype = $_GET['idroom'];
+
+$data = file_get_contents('json/hotel.json');
+$datahotel = json_decode($data, true);
+$hotel = $datahotel[$id];
+
+?>
 @extends('layouts.layout')
 @section('content')
 
@@ -46,64 +61,68 @@
                     </div>
                     <div class="row" style="padding-bottom:20px">
                         <div class="col" style="background: white; border-radius:10px;padding-bottom:20px">
-                            <div class="col" style="padding:10px; background: white; border-radius:10px">
-                                <h5 style="padding:5px;font-weight: 600;">Utap Hotel Bandung</h5>
-                                {{-- hr --}}
-                                <div class="d-flex justify-content-between" style="margin-top: -15px">
-                                    <hr width="1000px" style="height:2px">
+                            <div class="col-md rounded " id="main-container" style="margin-top: 25px">
+                                <h3 id="main-text-style">
+                                    <i class="bi bi-building" style="color: rgb(16,156,220)"></i>
+                                    &nbsp; <?= $hotel['namahotel'] ?>
+                                </h3>
+                                <hr style="height: 2px">
+                                <div class="row justify-content-center" style="color: grey; margin-bottom: 20px">
+                                    <div class="col-md-6">
+                                        <h5 id="main-text-style">Check-In</h5>
+                                        <h6 id="booking-content">Mon, 14 Mar 2022, </h6>
+                                        <h6 id="booking-content">From 15:00</h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 id="main-text-style">Check-Out</h5>
+                                        <h6 id="booking-content">Tue, 15 Mar 2022, </h6>
+                                        <h6 id="booking-content">Before 12:00</h6>
+                                    </div>
                                 </div>
-                                {{-- end hr --}}
+                                <div class="row justify-content-center" style="color: grey">
+                                    <div class="col-md-6">
+                                        <h5 id="main-text-style">Room Type</h5>
+                                        <h6 id="booking-content"><?= $hotel['roomtype'][$idroomtype]['nama-tipe'] ?></h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 id="main-text-style">Guest per Room</h5>
+                                        <h6 id="booking-content"><?= $hotel['roomtype'][$idroomtype]['characteristics-2'] ?>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <hr style="height: 2px">
+                                <div class="price" style="text-align: right">
+                                    <h5 style="padding-top: 10px; font-family: Poppins, sans-serif;">Total Price</h5>
+                                    <h3 id="teks-harga">Rp <?= $hotel['roomtype'][$idroomtype]['harga'] ?></h3>
+                                    <button type="button" class="btn btn-primary" id="booking-btn" data-toggle="modal"
+                                        data-target="#booking-modal">Book Now!</button>
 
-                                <div class="row d-flex justify-content-center" style="padding-bottom:10px">
-                                    <div class="col-5">
-                                        <h6 style="color: #9D9D9D; font-weight:600">Check-in</h6>
-                                        <h6 style="color: #9D9D9D; font-weight:400">Mon, 14 Mar 2022 <span><br>From
-                                                15.00</span></h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 style="color: #9D9D9D; font-weight:600">Check-in</h6>
-                                        <h6 style="color: #9D9D9D; font-weight:400">Mon, 14 Mar 2022 <span><br>From
-                                                15.00</span>
-                                        </h6>
-                                    </div>
-                                </div>
-
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-5">
-                                        <h6 style="color: #9D9D9D; font-weight:600">Room Type</h6>
-                                        <h6 style="color: #9D9D9D; font-weight:400">Twin Bed
-                                        </h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 style="color: #9D9D9D; font-weight:600">Guest Per Room</h6>
-                                        <h6 style="color: #9D9D9D; font-weight:400">1
-                                        </h6>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-end">
-                                    <div class="col-5"></div>
-                                    <div class="col-4 pt-3" style="text-align: right;">
-                                        <div class="row" style="margin-bottom: -15px">
-                                            <p>Total Price</p>
+                                    <!-- MODAL -->
+                                    <div class="modal fade" id="booking-modal" role="dialog"
+                                        aria-labelledby="booking-modal-label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content" style="padding: 30px">
+                                                <div class="modal-header justify-content-center">
+                                                    <h3 class="modal-title"
+                                                        style="font-family: Poppins, sans-serif; color: rgb(16, 156, 220); font-weight: bold">
+                                                        <div class="text-center">
+                                                            <h1 style="font-size: 140px">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </h1>
+                                                        </div>
+                                                        Booking Success
+                                                    </h3>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="row" style="">
-                                            <h2>Rp 200.000</h2>
-                                        </div>
-
-                                        <button class="btn btn-primary" type="button"
-                                            style="width: 223px;height: 41px;background: #0A9CDF;border-radius: 10px;border:0px">Continue</button>
                                     </div>
+                                    <!-- END MODAL -->
+
                                 </div>
                             </div>
                         </div>
 
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
 

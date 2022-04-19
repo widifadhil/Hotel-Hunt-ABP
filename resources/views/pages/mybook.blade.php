@@ -45,10 +45,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" style="background-color: #00AEEF;border:0px"><i
-                                    class="fa-solid fa-power-off" style="padding-right:5px"></i>Log Out</button>
-                        </div>
+                        <form action="/logout" method="post">
+                            @csrf
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="submit"
+                                    style="background-color: #00AEEF;border:0px"><i class="fa-solid fa-power-off"
+                                        style="padding-right:5px"></i>Log Out</button>
+                            </div>
+                        </form>
                     </div>
                     {{-- End Kotak Kiri --}}
 
@@ -94,7 +98,7 @@
                         </div>
                     </div>
                     {{--  --}}
-
+                    
 
                 </div>
                 {{-- End Kotak Kanan --}}

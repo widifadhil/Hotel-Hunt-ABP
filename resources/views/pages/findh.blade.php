@@ -1,3 +1,8 @@
+<?php
+$data = file_get_contents('json/hotel.json');
+$hotel = json_decode($data, true);
+
+?>
 @extends('layouts.layout')
 @section('content')
 
@@ -75,7 +80,16 @@
         <div class="container d-flex justify-content-center pb-3">
             <div class="col-lg-3" style="margin-left: -30px">
                 <div class="row pb-3">
-                    <div class="square"></div>
+                    <div class="container" style="margin-bottom: 30px">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-12 g-0 shadow-sm">
+                                <iframe class="embed-responsive-item col-12"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347863129!2d107.57311687144541!3d-6.903444341655675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1650214402152!5m2!1sid!2sid"
+                                    width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row pb-3">
                     <div class="sortby">
@@ -83,18 +97,16 @@
                             Sort By
                         </div>
                         <div class="card-body">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1" style="font-weight:400">
-                                    Lowest Price
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                    checked>
-                                <label class="form-check-label" for="flexRadioDefault2" style="font-weight:400">
-                                    Highest Price
-                                </label>
+                            <div class="sort-form">
+                                <input type="radio" class="form-check-input mt-1" name="sort-by-price" id="lowest-price">
+                                <label for="lowest-price"
+                                    style="font-family: Poppins, sans-serif; padding-left: 10px; padding-bottom: 10px">Lowest
+                                    Price</label>
+                                <br>
+                                <input type="radio" class="form-check-input mt-1" name="sort-by-price" id="highest-price">
+                                <label for="highest-price"
+                                    style="font-family: Poppins, sans-serif; padding-left: 10px; padding-bottom: 10px">Highest
+                                    Price</label>
                             </div>
                         </div>
                     </div>
@@ -105,181 +117,80 @@
                             Filter By
                         </div>
                         <div class="card-body">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1" style="font-weight:400">
-                                    <i class="star bi bi-star-fill"></i>
+                            <div class="sort-form">
+                                <input type="checkbox" class="form-check-input mt-1" id="satu-bintang">
+                                <label for="satu-bintang" style="color: gold; padding-left: 10px; padding-bottom: 10px">
+                                    <i class="bi bi-star-fill"></i>
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2" style="font-weight:400">
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
+                                <br>
+                                <input type="checkbox" class="form-check-input mt-1" id="dua-bintang">
+                                <label for="dua-bintang" style="color: gold; padding-left: 10px; padding-bottom: 10px">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1" style="font-weight:400">
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
+                                <br>
+                                <input type="checkbox" class="form-check-input mt-1" id="tiga-bintang">
+                                <label for="tiga-bintang" style="color: gold; padding-left: 10px; padding-bottom: 10px">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2" style="font-weight:400">
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
+                                <br>
+                                <input type="checkbox" class="form-check-input mt-1" id="empat-bintang">
+                                <label for="empat-bintang" style="color: gold; padding-left: 10px; padding-bottom: 10px">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1" style="font-weight:400">
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
-                                    <i class="star bi bi-star-fill"></i>
+                                <br>
+                                <input type="checkbox" class="form-check-input mt-1" id="lima-bintang">
+                                <label for="lima-bintang" style="color: gold; padding-left: 10px; padding-bottom: 10px">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </label>
+                                <br>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5" style="margin-left: -30px">
-                <div class="row pb-3">
-                    {{-- Card --}}
-                    <a href="#" class="card-found">
-                        <div class="card mb-3" style="width: 580px;">
-                            <div class="row g-0" style=>
-                                <div class="col-md-4">
-                                    <img src="img/card-found.png" class="card-img-top" alt="..." style="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Utap Hotel Bandung</h5>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <br>
-                                        <i class="loc bi bi-geo-alt-fill">Buah Batu, Bandung</i>
-                                        <div class="pt-4">
-                                            <div class="price d-flex justify-content-end" style="color: black">Rp 200.000 /
-                                                1 night</div>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="col-md-8 col-5" id="list-card-hotel" style="margin-left: 30px">
+                <?php foreach ($hotel as $row) : ?>
+                <!-- CARD HOTEL -->
+                <div class="container" id="card-hotel" style="margin-bottom: 20px">
+                    <a href="hdetail?id=<?= $row['id'] ?>">
+                        <div class="row justify-content-end">
+                            <div class="col-md-3 col-12 g-0 shadow-sm">
+                                <img class="img-fluid" src="<?= $row['image'][0] ?>" alt="hotel-img"
+                                    style="object-fit: cover; aspect-ratio: 1/1">
+                            </div>
+                            <div class="col-md-9 col-12 g-0 shadow-sm"
+                                style="background-color: white; padding: 10px; padding-left: 15px">
+                                <h5 id="main-text-style" style="color: black"><?= $row['namahotel'] ?></h5>
+                                <h6 style="color: gold">
+                                    <?php for($i=0; $i<$row["star"]; $i++): ?>
+                                    <i class="bi bi-star-fill"></i>
+                                    <?php endfor; ?>
+                                </h6>
+                                <h6 style="color: grey; margin-top:10px">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <?= $row['lokasi'] ?>
+                                </h6>
+                                <h6 id="main-text-style"
+                                    style="text-align: right; margin-top: 10px; color: rgb(16, 156, 220)">Rp
+                                    <?= $row['harga'] ?>/night</h6>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="card-found">
-                        <div class="card mb-3" style="width: 580px;">
-                            <div class="row g-0" style=>
-                                <div class="col-md-4">
-                                    <img src="img/card-found.png" class="card-img-top" alt="..." style="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Utap Hotel Bandung</h5>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <br>
-                                        <i class="loc bi bi-geo-alt-fill">Buah Batu, Bandung</i>
-                                        <div class="pt-4">
-                                            <div class="price d-flex justify-content-end" style="color: black">Rp 200.000 /
-                                                1 night</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-found">
-                        <div class="card mb-3" style="width: 580px;">
-                            <div class="row g-0" style=>
-                                <div class="col-md-4">
-                                    <img src="img/card-found.png" class="card-img-top" alt="..." style="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Utap Hotel Bandung</h5>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <br>
-                                        <i class="loc bi bi-geo-alt-fill">Buah Batu, Bandung</i>
-                                        <div class="pt-4">
-                                            <div class="price d-flex justify-content-end" style="color: black">Rp 200.000 /
-                                                1 night</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-found">
-                        <div class="card mb-3" style="width: 580px;">
-                            <div class="row g-0" style=>
-                                <div class="col-md-4">
-                                    <img src="img/card-found.png" class="card-img-top" alt="..." style="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Utap Hotel Bandung</h5>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <br>
-                                        <i class="loc bi bi-geo-alt-fill">Buah Batu, Bandung</i>
-                                        <div class="pt-4">
-                                            <div class="price d-flex justify-content-end" style="color: black">Rp 200.000 /
-                                                1 night</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card-found">
-                        <div class="card mb-3" style="width: 580px;">
-                            <div class="row g-0" style=>
-                                <div class="col-md-4">
-                                    <img src="img/card-found.png" class="card-img-top" alt="..." style="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Utap Hotel Bandung</h5>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <i class="star bi bi-star-fill"></i>
-                                        <br>
-                                        <i class="loc bi bi-geo-alt-fill">Buah Batu, Bandung</i>
-                                        <div class="pt-4">
-                                            <div class="price d-flex justify-content-end" style="color: black">Rp 200.000 /
-                                                1 night</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    {{-- End Card --}}
                 </div>
+                <!-- END CARD HOTEL -->
+                <?php endforeach; ?>
             </div>
+            <!-- END BAGIAN KANAN CONTENT -->
         </div>
         @include('includes.footer')
     </body>

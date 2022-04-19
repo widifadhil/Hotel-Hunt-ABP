@@ -3,10 +3,10 @@
 
     <body id="mybook">
         @include('includes.nav')
-        <div class="container" id="conmybook">
+        <div class="container-fluid" id="conmybook">
             <div class="d-flex justify-content-center">
                 {{-- Kotak kiri --}}
-                <div class="col-lg-3 pd-5 mt-5 mt-lg-0" id="hotel-view" style="padding-right: 30px;padding-bottom:20vh;">
+                <div class="col-md-3 pd-5 mt-5 mt-md-0" id="hotel-view" style="padding-right: 30px;padding-bottom:20vh;">
                     <div class="container" style="background: white; border-radius:10px;height: 694px;">
                         <div class="row p-3">
                             <div class="circular--landscape">
@@ -24,7 +24,7 @@
                             <div class="row p-3">
                                 <div class="col">
                                     <i class="b-icon fa-solid fa-gear fa-xl" style="padding-right:10px"></i>
-                                    <a href="" class="b-a"><span
+                                    <a href="/myaccount" class="b-a"><span
                                             style="font-weight: 500;font-size: 20px;line-height: 20px;">My Account</span>
                                     </a>
                                 </div>
@@ -32,29 +32,33 @@
                             <div class="row p-3">
                                 <div class="col">
                                     <i class="b-icon fa-solid fa-book-open fa-xl" style="padding-right:10px"></i>
-                                    <a href="" class="b-a"><span
+                                    <a href="/mybook" class="b-a"><span
                                             style="font-weight: 500;font-size: 20px;line-height: 20px;">My Book</span> </a>
                                 </div>
                             </div>
                             <div class="row p-3">
                                 <div class="col">
                                     <i class="b-icon fa-solid fa-file-invoice fa-xl" style="padding-right:10px"></i>
-                                    <a href="" class="b-a"><span
+                                    <a href="/pclist" class="b-a"><span
                                             style="font-weight: 500;font-size: 20px;line-height: 20px;">Purchase List</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button" style="background-color: #00AEEF;border:0px"><i
-                                    class="fa-solid fa-power-off" style="padding-right:5px"></i>Log Out</button>
-                        </div>
+                        <form action="/logout" method="post">
+                            @csrf
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="submit"
+                                    style="background-color: #00AEEF;border:0px"><i class="fa-solid fa-power-off"
+                                        style="padding-right:5px"></i>Log Out</button>
+                            </div>
+                        </form>
                     </div>
                     {{-- End Kotak Kiri --}}
 
                     {{-- Kotak Kanan --}}
                 </div>
-                <div class="col-lg-6 pd-5 mt-5 mt-lg-0" id="hotel-view">
+                <div class="col-md-6 pd-5 mt-5 mt-md-0" id="hotel-view">
                     <h3 style="color: #757575;">Purchase List</h3>
                     {{-- list book --}}
                     <div class="container" style="padding-top:15px;">

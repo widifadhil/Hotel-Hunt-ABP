@@ -48,9 +48,9 @@ class UserController extends Controller
         $data->email = $request->email;
         $data->username = $request->username;
         $data->password = sha1($request->password);
-        $data->mobile = $request->mobile;
-        $data->address = $request->address;
-        $data->photo = $imgPath;
+        // $data->mobile = $request->mobile;
+        // $data->address = $request->address;
+        // $data->photo = $imgPath;
         // $request->photo
         $data->save();
 

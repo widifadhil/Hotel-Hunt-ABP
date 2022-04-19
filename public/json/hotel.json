@@ -1,0 +1,448 @@
+[
+    {
+        "id": 0,
+        "namahotel": "The Trans Luxury Hotel",
+        "star": 5,
+        "lokasi": "Jl. Gatot Subroto No.289, Cibangkong, Kec. Batununggal, Kota Bandung, Jawa Barat 40273.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.4817348425727!2d107.63648520692432!3d-6.92709193915051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d7a4d4583b%3A0x779369af3e3a9b2a!2sThe%20Trans%20Luxury%20Hotel!5e0!3m2!1sid!2sid!4v1650090272837!5m2!1sid!2sid",
+        "harga": "3.736.667",
+        "int-harga": 3736667,
+        "deskripsi": "Hotel mewah ini terletak di seberang Trans Studio Mall Bandung, serta berjarak 2 km dari stasiun kereta Cikudapateuh dan 4 km dari tempat makan dan pusat perbelanjaan di sepanjang Jalan Braga yang ramai.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-1280x718-FIT_AND_TRIM-1b3c8363682b1c1f75dcfdfad3a29964.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-800x600-FIT_AND_TRIM-67c3e43035a2e80d45983749bd1bf471.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-3318x1974-FIT_AND_TRIM-50d729ce971b869fbeb0a7effc8ccfa9.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-1194x890-FIT_AND_TRIM-70e5ae1a9a28ade61353a3cf33e362a2.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-1194x883-FIT_AND_TRIM-113b7129508ecace476294baa849a639.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["Wifi", "Breakfast", "Parking", "Pool", "AC"],
+        "icon-fasilitas": [
+            "fa-solid fa-wifi",
+            "fa-solid fa-utensils",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-person-swimming",
+            "fa-solid fa-snowflake"
+        ],
+        "jumlah-fasilitas": 5,
+        "roomtype": [
+            {
+                "nama-tipe": "Premier Room",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-f2ae40544c03ba073c23b46c959e9e31.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed/2 Single Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Free Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar mewah yang dilengkapi dengan fasilitas seperti AC, Wifi, dan lain sebagainya.",
+                "harga": "3.736.667"
+            },
+            {
+                "nama-tipe": "Club Premier",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002404-3576e286033c8789eb285f5b6630bba9.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed/2 Single Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Smoking Room",
+                "icon-fasilitas-2": "fa-solid fa-smoking",
+                "deskripsi": "Kamar yang lebih mewah dari sebelumnya, dan dilengkapi dengan Smoking Room.",
+                "harga": "4.987.000"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "namahotel": "Hilton Bandung",
+        "star": 5,
+        "lokasi": "Jl. HOS Tjokroaminoto No.41-43, Arjuna, Kec. Cicendo, Kota Bandung, Jawa Barat 40172.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8115750875663!2d107.5977829!3d-6.913119099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e66a9e40f8cd%3A0xf85c3bc286fb3a55!2sHilton%20Bandung!5e0!3m2!1sid!2sid!4v1650094293133!5m2!1sid!2sid",
+        "harga": "3.226.667",
+        "int-harga": 3226667,
+        "deskripsi": "Hotel kontemporer yang berada di pusat kota ini berjarak 8 menit berjalan kaki dari stasiun antar-kota di Stasiun Bandung, serta 1,5 km dari butik di Jalan Braga.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20042050-cc8319bdfc1471fca7e027cf0d877752.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20042050-3a4a3f8a31d0eddcaa1c78cd22969059.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20042050-251e1177e1ad8389e644118831c0ee54.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20042050-86ffe89bc9fb7463706b3d6726f77d9f.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20042050-62cd88f974d94b1cd01efc0f7f7efc2a.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["Wifi", "Spa", "Parking", "AC", "Pool"],
+        "icon-fasilitas": [
+            "fa-solid fa-wifi",
+            "fa-solid fa-spa",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-snowflake",
+            "fa-solid fa-person-swimming"
+        ],
+        "jumlah-fasilitas": 5,
+        "roomtype": [
+            {
+                "nama-tipe": "King Deluxe",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/3000000/2600000/2599400/2599315/158aaf0b_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 King Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "AC Room",
+                "icon-fasilitas-1": "fa-solid fa-snowflake",
+                "fasilitas-2": "Water Heater",
+                "icon-fasilitas-2": "fa-solid fa-mug-hot",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan pemandangan indah dan Water Heater untuk membuat Kopi.",
+                "harga": "3.226.667"
+            },
+            {
+                "nama-tipe": "Queen Premium",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/3000000/2600000/2599400/2599315/763ec662_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Queen Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "AC Room",
+                "icon-fasilitas-1": "fa-solid fa-snowflake",
+                "fasilitas-2": "Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan ruangan ber-AC dan Water Heater untuk membuat Teh.",
+                "harga": "3.246.333"
+            },
+            {
+                "nama-tipe": "Family Room",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/3000000/2600000/2599400/2599315/603f4cf0_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "2 Twin Bed",
+                "characteristics-2": "4 Guests",
+                "fasilitas-1": "AC Room",
+                "icon-fasilitas-1": "fa-solid fa-snowflake",
+                "fasilitas-2": "LCD TV",
+                "icon-fasilitas-2": "fa-solid fa-tv",
+                "deskripsi": "Kamar hotel untuk keluarga yang dilengkapi dengan paket sarapan gratis satu kali.",
+                "harga": "3.649.333"
+            },
+            {
+                "nama-tipe": "Presidental Suite",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/3000000/2600000/2599400/2599315/47aab73a_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Premium Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "AC Room",
+                "icon-fasilitas-1": "fa-solid fa-snowflake",
+                "fasilitas-2": "Bathub",
+                "icon-fasilitas-2": "fa-solid fa-bath",
+                "deskripsi": "Kamar hotel mewah dengan ruangan yang sangat luas dan dilengkapi banyak perabot mewah.",
+                "harga": "10.549.333"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "namahotel": "Grand Sunshine Resort & Convention",
+        "star": 4,
+        "lokasi": "Jl. Raya Soreang No.06, Pamekaran, Kec. Soreang, Kabupaten Bandung, Jawa Barat 40912.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253491.94080560424!2d107.31763153281248!3d-6.913119099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68eddc5f4aa389%3A0x3befd42f77e65baa!2sGrand%20Sunshine%20Resort%20%26%20Convention!5e0!3m2!1sid!2sid!4v1650124877107!5m2!1sid!2sid",
+        "harga": "850.000",
+        "int-harga": 850000,
+        "deskripsi": "Hotel bersuasana santai ini terletak di antara pohon palem yang berjarak 4 km dari Pesona Nirwana Waterpark. Hotel ini berjarak 6 km dari Taman Love Soreang dan 21 km dari stasiun kereta Bandung.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-e802852d137695ca0ac5a6bd758ee37f.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-bee774ce754b216753edb22cd12e0fdd.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-49feed25d49191950fcd38ffe73abef5.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-876d1c6e603c3c3a134856245f8e73ce.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-9fee8398b524f2ca6a37065fc0c1a01a.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["AC", "Breakfast", "Parking", "Pool", "Gym"],
+        "icon-fasilitas": [
+            "fa-solid fa-snowflake",
+            "fa-solid fa-utensils",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-person-swimming",
+            "fa-solid fa-dumbbell"
+        ],
+        "jumlah-fasilitas": 5,
+        "roomtype": [
+            {
+                "nama-tipe": "Deluxe",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-1d13c52ae5362178fad188e63987084d.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed/2 Single Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "AC Room",
+                "icon-fasilitas-1": "fa-solid fa-snowflake",
+                "fasilitas-2": "Free Wifi",
+                "icon-fasilitas-2": "fa-solid fa-wifi",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan Wifi gratis serta ruangan yang ber-AC.",
+                "harga": "850.000"
+            },
+            {
+                "nama-tipe": "Sunshine",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-e24f35f1d7fa6c58141ff21815c6c6a7.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "3 Single Bed",
+                "characteristics-2": "3 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Free Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan Wifi dan sarapan gratis, serta memuat 3 orang.",
+                "harga": "2.900.000"
+            },
+            {
+                "nama-tipe": "Grand Suite",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20019917-71ccc465e1d9046a04f1f018c7bb0707.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "AC Room",
+                "icon-fasilitas-1": "fa-solid fa-snowflake",
+                "fasilitas-2": "Free Wifi",
+                "icon-fasilitas-2": "fa-solid fa-wifi",
+                "deskripsi": "Kamar mewah yang luas dan dilengkapi dengan ruangan ber-AC serta pemandangan yang indah.",
+                "harga": "3.200.000"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "namahotel": "Ibis Budget Bandung Asia Afrika",
+        "star": 4,
+        "lokasi": "Jl. Asia Afrika No.128, Paledang, Kec. Lengkong, Kota Bandung, Jawa Barat 40261.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63375.60596891112!2d107.51718215820311!3d-6.893549000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e62ec31c5b53%3A0x77fca040e029b05d!2sIbis%20Budget%20Bandung%20Asia%20Afrika!5e0!3m2!1sid!2sid!4v1650296904449!5m2!1sid!2sid",
+        "harga": "439.067",
+        "int-harga": 439067,
+        "deskripsi": "Hotel sederhana & murah ini berjarak 5 menit berjalan kaki dari museum Gedung Merdeka yang bergaya art-deco, 9 menit berjalan kaki dari perbelanjaan dan restoran di sepanjang Jalan Braga, serta 1,8 km dari stasiun kereta Bandung.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10016044-1523x834-FIT_AND_TRIM-aae02167ab44383d5d95be81104d54fe.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10016044-1523x834-FIT_AND_TRIM-04fed00e80bd518c388b99cb70201f5e.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10016044-1523x834-FIT_AND_TRIM-cc0a5fee9b3ffbe6e5b57184517c51d1.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10016044-1523x834-FIT_AND_TRIM-1f134082862cef4b05ff30b0b789f8d4.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10016044-1523x834-FIT_AND_TRIM-7e462533c2e23ef14f2ebe484d8fe162.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["AC", "Wifi", "Parking", "Breakfast"],
+        "icon-fasilitas": [
+            "fa-solid fa-snowflake",
+            "fa-solid fa-wifi",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-utensils"
+        ],
+        "jumlah-fasilitas": 4,
+        "roomtype": [
+            {
+                "nama-tipe": "Full Bed",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/11000000/10560000/10553900/10553841/b8e4c116_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Full Bed",
+                "characteristics-2": "1 Guests",
+                "fasilitas-1": "Free Breakfast",
+                "icon-fasilitas-1": "fa-solid fa-utensils",
+                "fasilitas-2": "Free Wifi",
+                "icon-fasilitas-2": "fa-solid fa-wifi",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan Wifi gratis serta sarapan gratis satu kali untuk satu orang.",
+                "harga": "439.067"
+            },
+            {
+                "nama-tipe": "Twin Beds",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/11000000/10560000/10553900/10553841/ac8425e7_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "2 Single Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Breakfast",
+                "icon-fasilitas-1": "fa-solid fa-utensils",
+                "fasilitas-2": "Free Wifi",
+                "icon-fasilitas-2": "fa-solid fa-wifi",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan Wifi gratis serta sarapan gratis satu kali untuk dua orang.",
+                "harga": "439.067"
+            },
+            {
+                "nama-tipe": "Multiple Beds",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/11000000/10560000/10553900/10553841/05cf8613_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Bunk Bed & 1 Full Bed",
+                "characteristics-2": "3 Guests",
+                "fasilitas-1": "Free Breakfast",
+                "icon-fasilitas-1": "fa-solid fa-utensils",
+                "fasilitas-2": "Free Wifi",
+                "icon-fasilitas-2": "fa-solid fa-wifi",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan Wifi gratis serta sarapan gratis satu kali untuk tiga orang.",
+                "harga": "573.047"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "namahotel": "ASTON Pasteur",
+        "star": 4,
+        "lokasi": "Jl. Dr. Djunjunan No.162, Sukagalih, Kec. Sukajadi, Kota Bandung, Jawa Barat 40162.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63375.605942165515!2d107.51718175820311!3d-6.8935492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e664bb71ae29%3A0x823b1d1f09f4a0de!2sASTON%20Pasteur!5e0!3m2!1sid!2sid!4v1650346320975!5m2!1sid!2sid",
+        "harga": "1.064.000",
+        "int-harga": 1064000,
+        "deskripsi": "Hotel modern ini berjarak 3 km dari Bandara Internasional Husein Sastranegara dan 2 km dari mal Paris Van Java. Kamar kelas atas dengan jendela setinggi langit-langit dilengkapi Wi-Fi gratis, TV layar datar, bar mini, serta alat pembuat teh dan kopi. Kamar suite memiliki ruang keluarga. Room service tersedia.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-900x600-FIT_AND_TRIM-0c6afd5bf3575450faf315be92fd5fad.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-900x600-FIT_AND_TRIM-ca3295d951201d09278284be7445032c.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x853-FIT_AND_TRIM-ecc2c43ac88fb04225dd32850c55dca0.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x853-FIT_AND_TRIM-30e287063b5bd2d5ef89a265165c3a32.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x856-FIT_AND_TRIM-7d171989a8d8c485f281c6b04f0b76ec.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["AC", "Wifi", "Pool", "Parking", "Breakfast"],
+        "icon-fasilitas": [
+            "fa-solid fa-snowflake",
+            "fa-solid fa-wifi",
+            "fa-solid fa-person-swimming",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-utensils"
+        ],
+        "jumlah-fasilitas": 5,
+        "roomtype": [
+            {
+                "nama-tipe": "Superior",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x862-FIT_AND_TRIM-c7574d5adfe164ea8710f098dce533f9.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed/2 Single Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Free Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan sarapan gratis satu kali serta Wifi gratis untuk diakses.",
+                "harga": "1.064.000"
+            },
+            {
+                "nama-tipe": "Family",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x856-FIT_AND_TRIM-7d171989a8d8c485f281c6b04f0b76ec.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed dan 1 Single Bed",
+                "characteristics-2": "3 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Free Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar hotel khusus untuk keluarga yang dilengkapi dengan sarapan dan Wifi gratis.",
+                "harga": "1.386.667"
+            },
+            {
+                "nama-tipe": "Executive Deluxe",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x853-FIT_AND_TRIM-b633e31c9e4ef4f46af3f6c55585928f.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 King Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Breakfast",
+                "icon-fasilitas-1": "fa-solid fa-utensils",
+                "fasilitas-2": "Smoking Room",
+                "icon-fasilitas-2": "fa-solid fa-smoking",
+                "deskripsi": "Kamar hotel yang dilengkapi dengan satu kali sarapan gratis, Wifi gratis serta smoking room.",
+                "harga": "1.548.000"
+            },
+            {
+                "nama-tipe": "Suite",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013360-1280x853-FIT_AND_TRIM-69a687352a30d6ced126de3069962298.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 King Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Breakfast",
+                "icon-fasilitas-1": "fa-solid fa-utensils",
+                "fasilitas-2": "Bathub",
+                "icon-fasilitas-2": "fa-solid fa-bath",
+                "deskripsi": "Kamar hotel mewah dengan pemandangan yang indah paket sarapan gratis, Wifi gratis serta Bathub.",
+                "harga": "2.274.000"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "namahotel": "Ibis Bandung Trans Studio Hotel",
+        "star": 4,
+        "lokasi": "Jl. Gatot Subroto No.289, Cibangkong, Kec. Batununggal, Kota Bandung, Jawa Barat 40273.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63375.605942165515!2d107.51718175820311!3d-6.8935492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e877d5022abd%3A0xb9a73bb4c9b7db44!2sIbis%20Bandung%20Trans%20Studio%20Hotel!5e0!3m2!1sid!2sid!4v1650347893063!5m2!1sid!2sid",
+        "harga": "693.332",
+        "int-harga": 693332,
+        "deskripsi": "Hotel modern yang terletak di sebelah Trans Studio Mall ini dapat diakses dengan berjalan kaki 4 menit dari taman hiburan Trans Studio Bandung, serta berjarak 3 km dari kafe modern dan toko butik di Jalan Braga.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10019962-1410x1536-FIT_AND_TRIM-23ff4b30a9b92f31d3da046c98564982.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10019962-2048x1365-FIT_AND_TRIM-30e06ca6ead80a1925823b4a84cb2af9.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10019962-2048x1489-FIT_AND_TRIM-8c24e2708da94c69a2d077d93929d383.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10019962-2048x1365-FIT_AND_TRIM-2f12416928395272551184fee39e41e5.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10019962-2048x1153-FIT_AND_TRIM-1d8562c2a0910ab4d6dc9b0f1bf24343.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["AC", "Brakfast", "Parking", "Wifi"],
+        "icon-fasilitas": [
+            "fa-solid fa-snowflake",
+            "fa-solid fa-utensils",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-wifi"
+        ],
+        "jumlah-fasilitas": 4,
+        "roomtype": [
+            {
+                "nama-tipe": "Twin Bed",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/5000000/4740000/4736000/4735922/fa22dc14_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "2 Twin Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Free Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar hotel dengan 2 Twin Bed yang dilengkapi dengan sarapan dan Wifi gratis.",
+                "harga": "693.332"
+            },
+            {
+                "nama-tipe": "Queen Bed",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/TzEv3ZUmG4-4Dz22hvmO9NUDzw1DGCIdWl4oPtKumOg=/hotels/5000000/4740000/4736000/4735922/e7716a8c_z.jpg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Queen Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "Free Breakfast",
+                "icon-fasilitas-2": "fa-solid fa-utensils",
+                "deskripsi": "Kamar hotel dengan 1 Queen Bed yang dilengkapi dengan Wifi dan sarapan gratis.",
+                "harga": "693.332"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "namahotel": "Horison Hotel",
+        "star": 4,
+        "lokasi": "Jl. Pelajar Pejuang 45 No.121, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264.",
+        "link-lokasi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63375.605942165515!2d107.51718175820311!3d-6.8935492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e87c56db6547%3A0xa6d168246b7c9ad!2sHorison%20Hotel!5e0!3m2!1sid!2sid!4v1650348673399!5m2!1sid!2sid",
+        "harga": "766.667",
+        "int-harga": 766667,
+        "deskripsi": "Hotel modern ini berjarak 2 km dari taman hiburan indoor Trans Studio Bandung, 5 km dari Gedung Sate, yang merupakan bekas kantor pemerintahan Kolonial Belanda, dan 7 km dari Kebun Binatang Bandung.",
+        "image": [
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-800x600-FIT_AND_TRIM-ca254b8bf5c176d1d09735c857323456.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-1500x900-FIT_AND_TRIM-1b41064d611aa95b16c78f2109d71781.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-dc5a09a5703ae9e1cb6b111f1c317c35.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-1b414c4374b12121c8183b0a08eff9cd.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640",
+            "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-82536508327fe251390e6ac19ccecdcc.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+        ],
+        "nama-fasilitas": ["AC", "Brakfast", "Parking", "Wifi", "Pool"],
+        "icon-fasilitas": [
+            "fa-solid fa-snowflake",
+            "fa-solid fa-utensils",
+            "fa-solid fa-square-parking",
+            "fa-solid fa-wifi",
+            "fa-solid fa-person-swimming"
+        ],
+        "jumlah-fasilitas": 5,
+        "roomtype": [
+            {
+                "nama-tipe": "Super Deluxe King",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-b6228033e3a78fdd6062c08939f99642.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 King Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "AC Room",
+                "icon-fasilitas-2": "fa-solid fa-snowflake",
+                "deskripsi": "Kamar hotel yang ber-AC dengan 1 King Bed namun tidak dilengkapi dengan sarapan gratis.",
+                "harga": "766.667"
+            },
+            {
+                "nama-tipe": "Super Deluxe Twin",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-82536508327fe251390e6ac19ccecdcc.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Twin Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "AC Room",
+                "icon-fasilitas-2": "fa-solid fa-snowflake",
+                "deskripsi": "Kamar hotel yang ber-AC dengan 1 Twin Bed namun tidak dilengkapi dengan sarapan gratis.",
+                "harga": "766.667"
+            },
+            {
+                "nama-tipe": "Executive",
+                "image": "https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10000295-3ac459370f796bee9f5015486d0d6191.png?_src=imagekit&tr=c-at_max,h-360,q-40,w-550",
+                "characteristics-1": "1 Double Bed",
+                "characteristics-2": "2 Guests",
+                "fasilitas-1": "Free Wifi",
+                "icon-fasilitas-1": "fa-solid fa-wifi",
+                "fasilitas-2": "AC Room",
+                "icon-fasilitas-2": "fa-solid fa-snowflake",
+                "deskripsi": "Kamar hotel yang ber-AC dengan 1 Double Bed dan ruangan yang lebih luas namun tidak dilengkapi dengan sarapan gratis.",
+                "harga": "1.033.333"
+            }
+        ]
+    }
+]

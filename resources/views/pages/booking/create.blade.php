@@ -49,8 +49,8 @@
                             <tr>
                                 <th>Available Rooms <span class="text-danger">*</span></th>
                                 <td>
-                                    <select class="form-control room-list">
-
+                                    <select class="form-control room">
+                                        
                                     </select>
                                 </td>
                             </tr>
@@ -88,6 +88,7 @@
 
                 $.ajax({
                     url: "{{ url('admin/booking')}}/available-rooms/"+_checkindate,
+
                     dataType: 'json',
                     success:function(res) {
                         console.log(res);

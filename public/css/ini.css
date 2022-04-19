@@ -575,7 +575,7 @@ p.loc {
 /* Filter Section */
 .sortby {
   background: white;
-  width: 270px;
+  width: 350px;
   border: 1px solid #AFAFAF;
   box-sizing: border-box;
 }
@@ -1179,4 +1179,70 @@ ul.footer li {
     border: 1px solid transparent;
     background: #e3b04b;
     color: #fff;
+  }
+
+  /* HOTEL DETAIL STYLESHEET */
+  
+  #main-container {
+    margin-top: 25px;
+    background-color: white;
+    padding: 30px;
+  }
+  
+  #roomtype-container {
+    
+    padding: 17px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  #judul-container {
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+  }
+  
+  #bintang {
+    color: gold;
+    padding-bottom: 8px;
+  }
+  
+  #lokasi {
+    color: grey;
+    padding-bottom: 8px;
+  }
+  
+  #small-img {
+    padding-top: 12px;
+    padding-right: 6px;
+  }
+  
+  #teks-harga {
+    font-weight: bold;
+    color: rgb(16, 156, 220);
+    font-family: Poppins, sans-serif;
+  }
+  
+  #teks-fasilitas {
+    font-family: Poppins, sans-serif;
+  }
+  
+  #color-logo-fasilitas {
+    color: rgb(16, 156, 220);
+  }
+  
+  .btn-primary {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(16, 156, 220);
+  }
+  
+  #main-btn {
+    font-size: 19px;
+    margin-top: 8px;
+    padding: 8px 38px;
+    border: none;
+  }
+  
+  #roomtype-btn {
+    font-size: 17px;
+    padding: 8px 10px;
+    border: none;
   }
