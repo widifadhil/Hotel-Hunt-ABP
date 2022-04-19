@@ -11,7 +11,7 @@ class AdminController extends Controller
     //Login
     function login()
     {
-        return view('login-admin');
+        return view('pages.admin.login');
     }
 
     function check_login(Request $request)

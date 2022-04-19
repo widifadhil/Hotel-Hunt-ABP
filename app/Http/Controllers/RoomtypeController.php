@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\RoomType;
-use App\Models\Roomtypeimage;
+use App\Models\Hotel;
+
 
 class RoomtypeController extends Controller
 {
@@ -16,7 +17,7 @@ class RoomtypeController extends Controller
     public function index()
     {
         $data=RoomType::all();
-        return view('roomtype.index',['data'=>$data]);
+        return view('pages.roomtype.index',['data'=>$data]);
     }
 
     /**
@@ -26,7 +27,8 @@ class RoomtypeController extends Controller
      */
     public function create()
     {
-        return view('roomtype.create');
+        $hotels=Hotel::all();
+        return view('pages.roomtype.create',['hotels'=>$hotels]);
     }
 
     /**
@@ -41,44 +43,30 @@ class RoomtypeController extends Controller
         $request->validate([
             'title'=>'required',
             'detail'=>'required',
-            'price'=>'required',
+            
         ]);
-
-        
-        // $imgPath=$request->file('photo')->store('public/imgs');
 
         $data=new RoomType;
         $data->title=$request->title;
         $data->detail=$request->detail;
-        $data->price=$request->price;
-
-
-        if($request->hasFile('photo'))
-        {
-            $file = $request->file('photo');
-            $extention = $file->getClientOriginalExtension();
-            $filename= time(). '.'.$extention;
-            $file->move('uplimg/imghotel/', $filename);
-            $data->photo = $filename;
-        }
+        $data->hotel_id=$request->hl_id;
+        $data->bed_type = $request->bed_type;
+        $data->room_size = $request->room_size;
+        $data->price = $request->price;
         $data->save();
+        
         return redirect('admin/roomtype/create')->with('success', 'Data has been added.');
-        // $data->save();
 
-        // foreach($request->file('imgs') as $img){
-        //     $imgPath=$img->store('public/imgs');
-        //     $imgData=new Roomtypeimage;
-        //     $imgData->room_type_id=$data->id;
-        //     $imgData->img_src=$imgPath;
-        //     $imgData->img_alt=$request->title;
-        //     $imgData->save();
-
+        //  untuk upload 1 image
+        // if($request->hasFile('photo'))
+        // {
+        //     $file = $request->file('photo');
+        //     $extention = $file->getClientOriginalExtension();
+        //     $filename= time(). '.'.$extention;
+        //     $file->move('uplimg/imghotel/', $filename);
+        //     $data->photo = $filename;
         // }
-
-        
-
-
-        
+        // $data->save();   
 
     }
 
@@ -91,7 +79,7 @@ class RoomtypeController extends Controller
     public function show($id)
     {
         $data=RoomType::find($id);
-        return view('roomtype.show',['data'=>$data]);
+        return view('pages.roomtype.show',['data'=>$data]);
     }
 
     /**
@@ -102,10 +90,10 @@ class RoomtypeController extends Controller
      */
     public function edit($id)
     {
-
+        $hotels=Hotel::all();
         $data=RoomType::find($id);
-        return view('roomtype.edit',['data'=>$data]);
-
+        return view('pages.roomtype.edit',['data'=>$data,'hotels'=>$hotels]);
+        
         
     }
 
@@ -121,11 +109,13 @@ class RoomtypeController extends Controller
     {
 
         // $imgPath=$request->file('photo')->store('public/imgs');
-
         $data=RoomType::find($id);
-        $data->title=$request->title;
-        $data->detail=$request->detail;
-        $data->price=$request->price;
+        $data->title = $request->title;
+        $data->detail = $request->detail;
+        $data->hotel_id = $request->hl_id;
+        $data->bed_type = $request->bed_type;
+        $data->room_size = $request->room_size;
+        $data->price = $request->price;
         $data->save();
 
         return redirect('admin/roomtype/'.$id.'/edit')->with('success', 'Data has been updated.');
@@ -143,4 +133,6 @@ class RoomtypeController extends Controller
         return redirect('admin/roomtype')->with('success', 'Data has been delete.');
 
     }
+
+    
 }

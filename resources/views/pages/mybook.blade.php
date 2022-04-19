@@ -39,7 +39,7 @@
                             <div class="row p-3">
                                 <div class="col">
                                     <i class="b-icon fa-solid fa-file-invoice fa-xl" style="padding-right:10px"></i>
-                                    <a href="" class="b-a"><span
+                                    <a href="/pclist" class="b-a"><span
                                             style="font-weight: 500;font-size: 20px;line-height: 20px;">Purchase List</span>
                                     </a>
                                 </div>

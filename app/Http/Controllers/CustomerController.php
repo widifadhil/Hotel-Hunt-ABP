@@ -16,7 +16,7 @@ class CustomerController extends Controller
     public function index()
     {
         $data = Customer::all();
-        return view('customer.index', ['data' => $data]);
+        return view('pages.customer.index', ['data' => $data]);
     }
 
     /**
@@ -26,7 +26,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        return view('customer.create');
+        return view('pages.customer.create');
     }
 
     /**
@@ -80,7 +80,7 @@ class CustomerController extends Controller
     public function show($id)
     {
         $data = Customer::find($id);
-        return view('customer.show', ['data' => $data]);
+        return view('pages.customer.show', ['data' => $data]);
     }
 
     /**
@@ -93,7 +93,7 @@ class CustomerController extends Controller
     {
 
         $data = Customer::find($id);
-        return view('customer.edit', ['data' => $data]);
+        return view('pages.customer.edit', ['data' => $data]);
     }
 
     /**
